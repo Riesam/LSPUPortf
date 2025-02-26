@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+/*
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/lspubg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+hr {
+    margin: 5px;
+}
+
+.titleHeader {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2%;
+    background-color: aliceblue;
+    display: flex;
+    pointer-events: none;
+}
+
+.lspuTop {
+    margin-left: 2%;
+    height: 100%;
+    width: 50%;
+}
+
+.text {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 100%;
+    font-size: 1.5vw;
+    margin-left: 18%;
+    color: midnightblue;
+    animation: lspuAnim 1s;
+}
+
+@keyframes lspuAnim {
+    from {opacity: 0; margin-left: 6%;}
+    to {opacity: 1; margin-left: 18%;}
+}
+
+.lspuImg {
+    float: left;
+    height: 6vw;
+    animation: logoAnim 1s;
+}
+
+@keyframes logoAnim {
+    from {opacity: 0; margin-left: -8%;}
+    to {opacity: 1; margin-left: 0%;}
+}
+
+.titleHeader img {
+    height: 6vw;
+    width: 6vw;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tags {
+    width: 50%;
+    float: right;
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tags ul {
+    list-style-type: none;
+}
+
+.tags li {
+    float: right;
+    margin-left: 50px;
+}
+
+.tags button {
+    text-align: center;
+}
+
+.navBtn {
+    font-weight: bolder;
+    padding: 20px;
+    border: none;
+    background-color: aliceblue;
+    pointer-events: visible;
+    transition: 0.2s;
+}
+
+.navBtn:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    border-bottom: 4px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.humssLogo {
+    animation: logoIn 2s forwards;
+    opacity: 0;
+}
+
+@keyframes logoIn {
+    from {opacity: 0; margin-top: -5%;}
+    to {opacity: 1; margin-top: 0;}
+}
+
+.frontText {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 600px;
+}
+
+#front1 {
+    margin-top: 4%;
+    font-size: xx-large;
+    font-weight: bolder;
+    animation: front1Anim 1s;
+}
+
+@keyframes front1Anim {
+    from {opacity: 0; margin-top: -8%;}
+    to {opacity: 1; margin-top: 4%;}
+}
+
+#front2 {
+    font-size: large;
+    font-weight: normal;
+    width: 60%;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    animation: front2Anim 1s forwards .5s;
+}
+
+@keyframes front2Anim {
+    from {opacity: 0; margin-top: 0%;}
+    to {opacity: 1; margin-top: 4%;}
+}
+
+.bottomNav a {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.gallery {
+    font-size: large;
+    text-align: center;
+    background-image: linear-gradient(rgb(0, 0, 107),rgb(58, 58, 255));
+    padding: 2%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: white;
+}
+
+.pics img {
+    width: 30%;
+    margin: 2%;
+    border-radius: 6px;
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.end {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    color: gray;
+}

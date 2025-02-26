@@ -271,4 +271,5 @@ ul {
     background-color: rgb(56, 56, 56);
     text-align: center;
     color: gray;
+    position: relative;
 }
